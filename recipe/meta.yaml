@@ -35,6 +35,11 @@ requirements:
     - werkzeug >=0.14,<4.0.0
     - __unix  # [unix]
     - __win  # [win]
+    - httpx >=0.24.1
+    - starlette >=0.37.0,<1.0.0
+    - uvicorn >=0.18.0,<1.0.0
+    - uvicorn-worker >=0.2.0,<1.0.0
+    - werkzeug >=0.14,<4.0.0
 
 test:
   imports:
