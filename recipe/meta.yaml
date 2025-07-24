@@ -1,5 +1,5 @@
 {% set name = "functions-framework" %}
-{% set version = "3.8.3" %}
+{% set version = "3.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/functions_framework-{{ version }}.tar.gz
-  sha256: 95827698469e3979518d52e32def2f11230465877fef32afd49045013b2a469c
+  sha256: 306d100d03a7ea88531d93547155df6ed2c2f4e76fce53909b398c01fde6c07c
 
 build:
   noarch: python
