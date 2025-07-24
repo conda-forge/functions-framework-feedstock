@@ -10,7 +10,6 @@ source:
   sha256: 306d100d03a7ea88531d93547155df6ed2c2f4e76fce53909b398c01fde6c07c
 
 build:
-  noarch: python
   entry_points:
     - ff = functions_framework._cli:_cli
     - functions-framework = functions_framework._cli:_cli
