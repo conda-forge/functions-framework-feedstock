@@ -1,5 +1,5 @@
 {% set name = "functions-framework" %}
-{% set version = "3.8.3" %}
+{% set version = "3.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/functions_framework-{{ version }}.tar.gz
-  sha256: 95827698469e3979518d52e32def2f11230465877fef32afd49045013b2a469c
+  sha256: 306d100d03a7ea88531d93547155df6ed2c2f4e76fce53909b398c01fde6c07c
 
 build:
   noarch: python
@@ -31,10 +31,15 @@ requirements:
     - click >=7.0,<9.0
     - watchdog >=1.0.0
     - gunicorn >=22.0.0  # [unix]
-    - cloudevents >=1.2.0,<2.0.0
+    - cloudevents <=1.11.0,>=1.2.0
     - werkzeug >=0.14,<4.0.0
     - __unix  # [unix]
     - __win  # [win]
+    - httpx >=0.24.1
+    - starlette >=0.37.0,<1.0.0
+    - uvicorn >=0.18.0,<1.0.0
+    - uvicorn-worker >=0.2.0,<1.0.0
+    - werkzeug >=0.14,<4.0.0
 
 test:
   imports:
