@@ -1,5 +1,5 @@
 {% set name = "functions-framework" %}
-{% set version = "3.9.0" %}
+{% set version = "3.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/functions_framework-{{ version }}.tar.gz
-  sha256: 306d100d03a7ea88531d93547155df6ed2c2f4e76fce53909b398c01fde6c07c
+  sha256: e8292259110f8432e1d2b651744967f6a06cf953c4b69695d4331752346958e6
 
 build:
   entry_points:
@@ -17,7 +17,7 @@ build:
     - functions-framework-python = functions_framework._cli:_cli
     - functions_framework_python = functions_framework._cli:_cli
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
