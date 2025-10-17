@@ -17,7 +17,7 @@ build:
     - functions-framework-python = functions_framework._cli:_cli
     - functions_framework_python = functions_framework._cli:_cli
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
