@@ -1,5 +1,5 @@
 {% set name = "functions-framework" %}
-{% set version = "3.10.1" %}
+{% set version = "3.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/functions_framework-{{ version }}.tar.gz
-  sha256: e60174022fc1b293dd0a33f1c6894dabd44852c0d440a51e7defd198e8d05ca5
+  sha256: a92f72fc35ead71753090787181ab96a869e609baab0ac3f1ef3a0fddfd20d48
 
 build:
   entry_points:
